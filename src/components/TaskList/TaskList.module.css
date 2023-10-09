@@ -1,0 +1,39 @@
+.container {
+  max-width: 23rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #282c34;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.details {
+  text-align: left;
+}
+
+.details h3 {
+  margin-bottom: 1rem;
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.actions svg {
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  background-color: #282c34;
+  color: #fff;
+  padding: 0.2rem;
+  transition: 0.5s;
+}
+
+.actions svg:hover {
+  color: #61dafb;
+}
