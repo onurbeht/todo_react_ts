@@ -10,9 +10,10 @@ import { ITask } from "../../interface/Task";
 type Props = {
   taskList: ITask[];
   handleDelete(id: number): void;
+  handleEdit(task: ITask): void;
 };
 
-const TaskList = ({ taskList, handleDelete }: Props) => {
+const TaskList = ({ taskList, handleDelete, handleEdit }: Props) => {
   return (
     <>
       {taskList.length > 0 ? (
@@ -23,7 +24,7 @@ const TaskList = ({ taskList, handleDelete }: Props) => {
               <p>Dificuldade: {task.difficulty}</p>
             </div>
             <div className={styles.actions}>
-              <BsPencil />
+              <BsPencil onClick={() => handleEdit(task)} />
               <BsTrash onClick={() => handleDelete(task.id)} />
             </div>
           </div>
